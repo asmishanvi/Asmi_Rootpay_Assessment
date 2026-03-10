@@ -1,6 +1,6 @@
 # RootPay Assessment - Multi-Step Onboarding Flow
 
-A pixel-accurate implementation of the RootPay multi-step onboarding flow built with React and TypeScript.
+A high-fidelity implementation of the RootPay multi-step onboarding flow using React and TypeScript.
 
 ## Live Demo
 

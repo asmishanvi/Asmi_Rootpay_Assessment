@@ -28,9 +28,9 @@ const Input = forwardRef<HTMLInputElement, InputProps>(
               onClick={() => setShowPassword(!showPassword)}
             >
               {showPassword ? (
-                <img src="/src/assets/icons/hideIcon.svg" alt="Hide" />
-              ) : (
                 <img src="/src/assets/icons/showIcon.svg" alt="Show" />
+              ) : (
+                <img src="/src/assets/icons/hideIcon.svg" alt="Hide" />
               )}
             </button>
           )}

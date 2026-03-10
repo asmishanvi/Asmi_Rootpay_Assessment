@@ -231,7 +231,7 @@ function Onboarding() {
           )}
 
           {step === 4 && (
-            <div className="onboarding-step">
+            <div className="onboarding-step name-step">
               <h2 className="step-title">What is your name?</h2>
               <div className="step-content">
                 <Input
@@ -257,7 +257,7 @@ function Onboarding() {
           )}
 
           {step === 5 && (
-            <div className="onboarding-step">
+            <div className="onboarding-step password-step">
               <h2 className="step-title">Create Password for your account</h2>
               <div className="step-content">
                 <Input
