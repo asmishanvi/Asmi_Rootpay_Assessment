@@ -10,6 +10,8 @@ import CountrySelect from "../components/dropdown-select/DropdownSelect";
 import PersonalIcon from "../assets/icons/personalIcon.svg?react";
 import BusinessIcon from "../assets/icons/businessIcon.svg?react";
 import OnboardingIcon from "../assets/icons/onboardingIcon.svg?react";
+import successIcon from "../assets/icons/successIcon.svg";
+import shieldIcon from "../assets/icons/shieldIcon.svg";
 
 interface FormData {
   accountType: string;
@@ -308,7 +310,7 @@ function Onboarding() {
       <Modal isOpen={showModal}>
         <div className="success-modal">
           <div className="success-icon">
-            <img src="/src/assets/icons/successIcon.svg" alt="Success" />
+            <img src={successIcon} alt="Success" />
           </div>
           <h2 className="success-title">You're all set!</h2>
           <p className="success-subtitle">
@@ -335,7 +337,7 @@ function Onboarding() {
             </div>
           </div>
           <p className="security-note">
-            <img src="/src/assets/icons/shieldIcon.svg" alt="Shield" />
+            <img src={shieldIcon} alt="Shield" />
             Your account is secured with bank-grade security
           </p>
           <Button onClick={() => navigate("/dashboard")}>
