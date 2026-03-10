@@ -4,11 +4,11 @@ A pixel-accurate implementation of the RootPay multi-step onboarding flow built 
 
 ## Live Demo
 
-https://rootpay-assessment.netlify.app/
+https://asmirootpayassignment.netlify.app
 
 ## GitHub Repo
 
-<ADD_GITHUB_REPO_URL>
+https://github.com/asmishanvi/Asmi_Rootpay_Assessment
 
 ## Local Setup (VS Code)
 
