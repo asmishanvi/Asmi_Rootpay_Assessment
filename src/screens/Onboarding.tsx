@@ -38,6 +38,13 @@ function Onboarding() {
     password: "",
     confirmPassword: "",
   });
+  const progressByStep: Record<number, number> = {
+    2: 15,
+    3: 25,
+    4: 50,
+    5: 100,
+  };
+  const progressPercent = progressByStep[step] ?? 0;
 
   const validateStep = () => {
     const newErrors: Partial<FormData> = {};
@@ -120,7 +127,9 @@ function Onboarding() {
       </div>
 
       <div className="onboarding-right">
-        <ProgressBar currentStep={step} totalSteps={5} />
+        {step > 1 && (
+          <ProgressBar currentStep={progressPercent} totalSteps={100} />
+        )}
         <form
           onSubmit={(e) => {
             e.preventDefault();
