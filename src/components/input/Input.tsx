@@ -1,4 +1,6 @@
 import { type InputHTMLAttributes, forwardRef, useState } from 'react';
+import showIcon from '../../assets/icons/showIcon.svg';
+import hideIcon from '../../assets/icons/hideIcon.svg';
 
 interface InputProps extends InputHTMLAttributes<HTMLInputElement> {
   label?: string;
@@ -28,9 +30,9 @@ const Input = forwardRef<HTMLInputElement, InputProps>(
               onClick={() => setShowPassword(!showPassword)}
             >
               {showPassword ? (
-                <img src="/src/assets/icons/showIcon.svg" alt="Show" />
+                <img src={showIcon} alt="Show" />
               ) : (
-                <img src="/src/assets/icons/hideIcon.svg" alt="Hide" />
+                <img src={hideIcon} alt="Hide" />
               )}
             </button>
           )}
